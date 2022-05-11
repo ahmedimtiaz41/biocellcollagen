@@ -1,0 +1,9 @@
+global-styling:
+  version: 1.x
+  js:
+    js/bootstrap.min.js: {}
+    js/custom.js: {}
+  css:
+    theme:
+      css/bootstrap.min.css: {}
+      css/style.css: {}

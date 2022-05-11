@@ -1,0 +1,19 @@
+name: BioCell Collagen 
+type: theme
+description: 'Custom Theme for BioCell Collagen'
+core_version_requirement: ^8 || ^9
+version: VERSION
+libraries:
+  - biocellcollagen/global-styling
+
+base theme: classy
+regions:
+  logo: 'Logo'
+  menu_top: 'Menu Top'
+  menu_bottom: 'Menu Bottom'
+  header: 'Header'
+  content: 'Content'
+  sidebar_first: 'Sidebar first'
+  footer: 'Footer'
+
+
