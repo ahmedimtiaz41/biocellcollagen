@@ -39,12 +39,18 @@
   {% endif %}
   {{ title_suffix }}
   {% block content %}
-  <div class="row">
-    <div class="col-md-3">{{ content.field_left_side_image }}</div>
-    <div class="col-md-4"> {{ content.body }}</div>
-    <div class="col-md-5">
-      
-      <iframe allowfullscreen="" frameborder="0" height="300" src="{{ content.field_video_iframe_link.0['#url'] }}" width="100%">
+  <div class="selling-wrapper row">
+    <div class="col-md-3">
+      <h2 class="blend">NOT JUST A BLEND</h2>
+      {{ content.field_left_side_image }}
+      <span>Unique Synergistic Ingredient</span>
+    </div>
+    <div class="col-md-3 selling-details"> {{ content.body }}</div>
+    <div class="col-md-5 selling-video">
+      <div class="video-inner">
+        <span>Why Take Biocell Collagen? An Introductory Video</span>
+        <iframe allowfullscreen="" frameborder="0" height="300" src="{{ content.field_video_iframe_link.0['#url'] }}" width="100%">
+      </div>
         
       </iframe>
     </div>
