@@ -9,11 +9,13 @@ libraries:
 base theme: classy
 regions:
   logo: 'Logo'
-  menu_top: 'Menu Top'
-  menu_bottom: 'Menu Bottom'
+  menu_top: 'Top Menu'
+  menu_bottom: 'Bottom Menu'
   header: 'Header'
   content: 'Content'
-  sidebar_first: 'Sidebar first'
+  sidebar_left: 'Sidebar Left'
+  content_bottom: 'Bottom Content'
+  footer_top: 'Top Footer'
   footer: 'Footer'
 
 
