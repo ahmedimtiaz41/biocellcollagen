@@ -1,3 +1,67 @@
+@font-face {
+    font-family: 'Aller';
+    src: url('../fonts/Aller-Bold.woff2') format('woff2'),
+        url('../fonts/Aller-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Aller';
+    src: url('../fonts/Aller-BoldItalic.woff2') format('woff2'),
+        url('../fonts/Aller-BoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Aller';
+    src: url('../fonts/Aller-Italic.woff2') format('woff2'),
+        url('../fonts/Aller-Italic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Aller';
+    src: url('../fonts/Aller-Light.woff2') format('woff2'),
+        url('../fonts/Aller-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Aller';
+    src: url('../fonts/Aller-LightItalic.woff2') format('woff2'),
+        url('../fonts/Aller-LightItalic.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Aller';
+    src: url('../fonts/Aller-Regular.woff2') format('woff2'),
+        url('../fonts/Aller-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Aller Display';
+    src: url('../fonts/AllerDisplay-Regular.woff2') format('woff2'),
+        url('../fonts/AllerDisplay-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
 * {
     margin: 0;
     padding: 0;
@@ -29,35 +93,56 @@ body {
 }
 
 body {
-    font-family: 0000;
+    font-family: arial, helvetica, clean, sans-serif;
+    background: url(../images/icons/body\ bg.png);
 }
-.conatiner{
+
+.conatiner {
     max-width: 1020px;
 }
 
 /* header css start */
-header{
-    padding: 22px 15px;
+header {
+    margin-top: 22px;
+    padding: 9px 13px;
+    ;
     background-image: linear-gradient(to bottom, #FAFAFA 0%, #E5E5E5 100%);
     box-shadow: 0 0 0 7px rgb(0 0 0 / 3%);
+    border-radius: 6px;
 }
-header .region-logo{
+
+header .region-logo {
     text-align: center;
     max-width: 190px;
 }
 
-header .site-logo img{
-        width: 100%;
+header .site-logo img {
+    width: 100%;
 }
+
+header .header-menu {
+    width: 80%;
+    background: url(../images/icons/bgMainMenuItem.gif) no-repeat 0 0;
+    margin: 0 0 0 5px;
+    background-size: contain;
+}
+
 header .header-inner,
-header  .region-menu-top,
-header .menu--top-menu .menu{
+header .region-menu-top,
+header .menu--top-menu .menu {
     display: flex;
     justify-content: space-between;
 }
 
+header .header-inner {
+    align-items: center;
+}
 
-header .menu--top-menu .menu .menu-item a{
+header .region-menu-top {
+    justify-content: flex-end;
+}
+
+header .menu--top-menu .menu .menu-item a {
     font-size: 10px;
     font-weight: bold;
     list-style: none;
@@ -65,9 +150,170 @@ header .menu--top-menu .menu .menu-item a{
     color: #333333;
     text-decoration: none;
     margin: 0 14px;
+
 }
-header .header-menu  #search-block-form{
+
+header .header-menu #search-block-form {
     background: url(../images/icons/bg-search.png) no-repeat;
     position: relative;
-    padding: 7px 5px;
+    padding: 4px 4px;
+    background-size: contain;
+    max-width: 244px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+header .header-menu form input {
+    border: 0;
+    background: no-repeat;
+    width: 197px;
+    outline: none;
+}
+
+header .menu--top-menu .menu .menu-item {
+    background: url(../images/icons/bgBullet.gif) no-repeat 4px 15px;
+
+}
+
+header .menu--top-menu .menu .menu-item:first-child {
+    background: none;
+}
+
+header .header-menu form .form-submit {
+    font-size: 0;
+    width: 30px;
+    height: 18px;
+    background: url(../images/icons/btnSearch.png) no-repeat 50% 19%;
+    margin-bottom: 2px;
+    display: block;
+}
+
+header .header-menu form .form-type-search {
+    margin: 0;
+}
+
+.banner-slider-wrpper{
+    margin: 15px 0;
+}
+
+.region-menu-bottom .menu a {
+    text-decoration: none;
+    color: #333;
+    display: block;
+    padding: 12px 5px 12px 9px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Aller';
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.region-menu-bottom .menu a.is-active ,
+.region-menu-bottom .menu a:hover {
+    color: #263692;
+}
+
+.region-menu-bottom .menu {
+    margin-top: 5px;
+    border-top: 1px solid #0000001f;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.region-menu-bottom .menu .menu-item:first-child {
+    background: none;
+}
+
+.region-menu-bottom .menu .menu-item {
+    background: url(../images/icons/bgMainMenuItem.gif) no-repeat 0 0;
+    margin: 0 0 0 5px;
+}
+
+.page-title {
+    box-shadow: 0px 0px 0px #000;
+    border-bottom: #ffffff solid 1px;
+    color: #263692;
+    font-family: "AllerItalic";
+    font-size: 45px;
+    font-weight: normal;
+    margin: 0 auto 30px;
+    text-align: center;
+}
+
+
+.page-title span {
+    border-bottom: #cecece solid 1px;
+    display: block;
+    padding: 10px 0;
+}
+
+
+.selling-wrapper h2 {
+    font-size: 18px;
+    font-weight: 400;
+    margin-top: 0px;
+    margin-bottom: 18px;
+}
+.selling-wrapper .blend{
+    font-size: 15px;
+    font-weight: 700;
+    margin: 0px 0 7px 27px;
+    text-transform: uppercase;
+}
+
+.selling-wrapper span {
+    display: block;
+    margin-top: 15px;
+    font: 14px/1.25 arial, helvetica, clean, sans-serif;
+}
+
+.selling-wrapper p,
+.selling-wrapper h3 {
+    color: #000;
+    font-size: 14px;
+    font-weight: 300;
+    margin-bottom: 18px;
+    line-height: 1.3;
+}
+
+.selling-details {
+    flex: 0 0 auto;
+    width: 28%;
+}
+
+.selling-video {
+    margin-left: 25px;
+    padding: 6px 0 0 19px;
+    border-left: solid 1px #CCC;
+}
+
+.selling-video .video-inner {
+    padding-bottom: 30px;
+    border-bottom: solid 1px #CCC;
+}
+
+.selling-video .video-inner span {
+    color: #263692;
+    font-size: 15px;
+    font-weight: normal;
+    line-height: 1em;
+    margin-top: 0px;
+    padding-left: 20px;
+    margin-bottom: 15px;
+    display: block;
+
+}
+
+
+@media (min-width: 1400px) {
+
+    .container,
+    .container-lg,
+    .container-md,
+    .container-sm,
+    .container-xl,
+    .container-xxl {
+        max-width: 1045px;
+    }
 }
