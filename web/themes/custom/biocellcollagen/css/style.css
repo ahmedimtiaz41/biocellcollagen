@@ -150,7 +150,6 @@ header .menu--top-menu .menu .menu-item a {
     color: #333333;
     text-decoration: none;
     margin: 0 14px;
-
 }
 
 header .header-menu #search-block-form {
@@ -173,7 +172,6 @@ header .header-menu form input {
 
 header .menu--top-menu .menu .menu-item {
     background: url(../images/icons/bgBullet.gif) no-repeat 4px 15px;
-
 }
 
 header .menu--top-menu .menu .menu-item:first-child {
@@ -302,12 +300,8 @@ header .header-menu form .form-type-search {
     padding-left: 20px;
     margin-bottom: 15px;
     display: block;
-
 }
-
-
 @media (min-width: 1400px) {
-
     .container,
     .container-lg,
     .container-md,
