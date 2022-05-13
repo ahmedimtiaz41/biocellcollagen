@@ -374,6 +374,94 @@ header .header-menu form .form-type-search {
     background-color: red;
 
 }
+
+/*
+* 
+*    CSS by Ahmed Starts Here 
+*
+*/
+div.tabs-nav {
+    margin-bottom: 20px;
+    padding-left: 34px;
+}
+.clearfix:before, .clearfix:after, .row:before, .row:after {
+    content: '\0020';
+    display: block;
+    overflow: hidden;
+    visibility: hidden;
+    width: 0;
+    height: 0;
+}
+div.tabs-nav ul {
+    margin: 0px !important;
+}
+div.tabs-nav li {
+    background: none;
+    display: inline;
+    float: left;
+    list-style-type: none;
+    margin: 0 0 0 0 !important;
+    padding: 0;
+    white-space: nowrap;
+}
+div.tabs-nav li a {
+    background-image: -ms-linear-gradient(top, #FFFFFF 0%, #E5E5E5 100%);
+    background-image: -moz-linear-gradient(top, #FFFFFF 0%, #E5E5E5 100%);
+    background-image: -o-linear-gradient(top, #FFFFFF 0%, #E5E5E5 100%);
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #FFFFFF), color-stop(1, #E5E5E5));
+    background-image: -webkit-linear-gradient(top, #FFFFFF 0%, #E5E5E5 100%);
+    background-image: linear-gradient(to bottom, #FFFFFF 0%, #E5E5E5 100%);
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    box-shadow: 0 0 0 7px rgb(0 0 0 / 3%);
+}
+div.tabs-nav li a {
+    background: url(../images/icons/bgBenefitsTab.png) no-repeat;
+    display: block;
+    font-family: "AllerBold";
+    margin: 0 18px 0 0;
+    padding: 28px 10px;
+    text-align: center;
+    text-decoration: none;
+    width: 208px;
+}
+.clearfix:after {
+    clear: both;
+}
+.clearfix:before, .clearfix:after, .row:before, .row:after {
+    content: '\0020';
+    display: block;
+    overflow: hidden;
+    visibility: hidden;
+    width: 0;
+    height: 0;
+}
+.special {
+    width: 245px;
+    text-align: center;
+    color: #263692;
+    font: normal 16px 'Aller';
+}
+.s2 {
+    width: 245px;
+    text-align: center;
+    color: #797979;
+    font: normal 12px 'Aller';
+}
+.anatomycontent {
+    height: 300px;
+    overflow-y: scroll;
+}
+
+
+
+
+/*
+* 
+*    CSS by Ahmed End Here 
+*
+*/
 @media (min-width: 1400px) {
 
     .container,
