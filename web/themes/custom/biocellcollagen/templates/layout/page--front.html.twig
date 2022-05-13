@@ -55,8 +55,8 @@
         <div class="row">{{ page.menu_bottom }}</div>
       </div>
     </div>
-     
-    
+
+
     <div class="row">
       {{ page.header }}
     </div>
@@ -70,25 +70,136 @@
 
       {{ page.content }}
 
-      
+
     </div>{# /.layout-content #}
 
     {% if page.sidebar_first %}
-      <aside class="layout-sidebar-first" role="complementary">
-        {{ page.sidebar_first }}
-      </aside>
+    <aside class="layout-sidebar-first" role="complementary">
+      {{ page.sidebar_first }}
+    </aside>
     {% endif %}
 
+    
   </main>
+  
 
 </div>{# /.layout-container #}
 
 {# {% if page.footer %} #}
 <footer role="contentinfo">
   <div class="row">
+    <div class="footer-top">
+      <div class="container">
+        <h3></h3>
+        <div class="inner-slider">
+          <div class="slide">
+            <div class="slide-icon">
+              <img src="{{ url('<front>') }}themes/custom/biocellcollagen/images/icons/icon.png" alt="">
+            </div>
+            <div class="slide-details">
+              <a href="#">
+                <p>
+                  Study Shows BioCell Collagen Ingestion Reduced Signs of UVB-Induced Photoaging, Which Accounts for a
+                  Significant Amount of Visible Skin Damage</p>
+              </a>
+              <a href="#">Read More</a>
+            </div>
+          </div>
+          <div class="slide">
+            <div class="slide-icon">
+              <img src="{{ url('<front>') }}themes/custom/biocellcollagen/images/icons/icon.png" alt="">
+            </div>
+            <div class="slide-details">
+              <a href="#">
+                <p>
+                  Study Shows BioCell Collagen Ingestion Reduced Signs of UVB-Induced Photoaging, Which Accounts for a
+                  Significant Amount of Visible Skin Damage</p>
+              </a>
+              <a href="#">Read More</a>
+            </div>
+          </div>
+          <div class="slide">
+            <div class="slide-icon">
+              <img src="{{ url('<front>') }}themes/custom/biocellcollagen/images/icons/icon.png" alt="">
+            </div>
+            <div class="slide-details">
+              <a href="#">
+                <p>
+                  Study Shows BioCell Collagen Ingestion Reduced Signs of UVB-Induced Photoaging, Which Accounts for a
+                  Significant Amount of Visible Skin Damage</p>
+              </a>
+              <a href="#">Read More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     {{ page.footer_top}}
   </div>
   <div class="row">
+    <div class="footer-bottom">
+      <div class="container row">
+        <div class="col-md-10">
+          <ul class="footer-menu">
+            <li>
+              <a href="#">
+                Home
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                Benefits
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                Where to buy
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                Medical Professionals
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                FAQs
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                Contact Us
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                Corporate Site
+              </a>
+            </li>
+          </ul>
+          <div class="footer-dec">
+            <p>© 2019 Biocell Technology, LLC. All Rights Reserved</p>
+            <p>BioCell Collagen™, variously in name and/or design, are trademarks of BioCell Technology, LLC, and are registered in the United States and other jurisdictions. (Pat.: <a href="#">https://www.biocellcollagen.com/patents</a>)
+            </p>
+            
+          </div>
+        </div>
+        <div class="col-md-2">
+          <ul class="social-links">
+            <li><a href="#"><img src="{{ url('<front>') }}themes/custom/biocellcollagen/images/icons/ic1.png" alt=""></a></li>
+            <li><a href="#"><img src="{{ url('<front>') }}themes/custom/biocellcollagen/images/icons/ic2.png" alt=""></a></li>
+            <li><a href="#"><img src="{{ url('<front>') }}themes/custom/biocellcollagen/images/icons/ic3.png" alt=""></a></li>
+            <li><a href="#"><img src="{{ url('<front>') }}themes/custom/biocellcollagen/images/icons/ic4.png" alt=""></a></li>
+            <li><a href="#"><img src="{{ url('<front>') }}themes/custom/biocellcollagen/images/icons/ic5.png" alt=""></a></li>
+          </ul>
+          <a href="#">Legal Disclaimer</a>
+          <a href="#">Privacy Policy</a>
+        </div>
+      </div>
+      <div class="notice-box">
+        <p>THESE STATEMENTS HAVE NOT BEEN EVALUATED BY THE FOOD AND DRUG ADMINISTRATION. THESE PRODUCTS ARE NOT INTENDED TO DIAGNOSE, TREAT, CURE OR PREVENT ANY DISEASE.</p>
+      </div>
+    </div>
     {{ page.footer }}
   </div>
 </footer>
