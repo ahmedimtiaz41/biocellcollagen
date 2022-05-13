@@ -5,7 +5,7 @@
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
-        'reference' => '156a5a33b161793f26831a68342473c31d89442c',
+        'reference' => '140302f31636890a0e9574e66d9f988876071a17',
         'name' => 'drupal/recommended-project',
         'dev' => true,
     ),
@@ -168,6 +168,15 @@
             'replaced' => array(
                 0 => '9.3.12',
             ),
+        ),
+        'drupal/colorbox' => array(
+            'pretty_version' => '1.10.0',
+            'version' => '1.10.0.0',
+            'type' => 'drupal-module',
+            'install_path' => __DIR__ . '/../../web/modules/contrib/colorbox',
+            'aliases' => array(),
+            'reference' => '8.x-1.10',
+            'dev_requirement' => false,
         ),
         'drupal/comment' => array(
             'dev_requirement' => false,
@@ -685,7 +694,7 @@
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
-            'reference' => '156a5a33b161793f26831a68342473c31d89442c',
+            'reference' => '140302f31636890a0e9574e66d9f988876071a17',
             'dev_requirement' => false,
         ),
         'drupal/responsive_image' => array(
