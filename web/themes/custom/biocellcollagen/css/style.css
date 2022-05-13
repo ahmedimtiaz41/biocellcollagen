@@ -97,6 +97,12 @@ body {
     background: url(../images/icons/body\ bg.png);
 }
 
+a {
+    text-decoration: none;
+    color: #000;
+    display: inline-block;
+}
+
 .conatiner {
     max-width: 1020px;
 }
@@ -191,7 +197,7 @@ header .header-menu form .form-type-search {
     margin: 0;
 }
 
-.banner-slider-wrpper{
+.banner-slider-wrpper {
     margin: 15px 0;
 }
 
@@ -207,7 +213,7 @@ header .header-menu form .form-type-search {
     font-size: 14px;
 }
 
-.region-menu-bottom .menu a.is-active ,
+.region-menu-bottom .menu a.is-active,
 .region-menu-bottom .menu a:hover {
     color: #263692;
 }
@@ -253,7 +259,8 @@ header .header-menu form .form-type-search {
     margin-top: 0px;
     margin-bottom: 18px;
 }
-.selling-wrapper .blend{
+
+.selling-wrapper .blend {
     font-size: 15px;
     font-weight: 700;
     margin: 0px 0 7px 27px;
@@ -301,7 +308,74 @@ header .header-menu form .form-type-search {
     margin-bottom: 15px;
     display: block;
 }
+
+/* footer css start */
+.footer-top {
+    padding: 30px 0;
+    background: #2B3991;
+}
+
+.footer-top .inner-slider {
+    display: flex;
+    justify-content: space-between;
+}
+.footer-top .inner-slider .slide{
+    max-width: 300px;
+}
+
+.footer-top .inner-slider .slide-icon {
+    margin: 0 0 15px;
+}
+
+.footer-top .inner-slider .slide-details {
+    text-align: end;
+}
+.footer-top .inner-slider .slide-details a {
+    font-size: 11px;
+    color: #FFF;
+    padding-bottom: 0px;
+    line-height: 16px;
+    text-align: left;
+    margin-left: auto;
+}
+.footer-top .inner-slider .slide-details a:hover {
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    background-color: #131c51;
+}
+
+.footer-bottom .footer-menu{
+    display: flex;
+}
+
+.footer-bottom .footer-menu a{
+    font-size: 11px;
+    font-weight: 700;
+    line-height: 1.5;
+    color: #ffffff;
+    text-decoration: none;
+    margin-right: 19px;
+    position: relative;
+}
+.footer-bottom .footer-menu a::after{
+    content: '';
+    width: 3px;
+    height: 3px;
+    top: 50%;
+    right: 0;
+    position: absolute;
+    transform: translate(328% , -60%);
+    background-color: #ffffff63;
+    border-radius: 50%;
+}
+.footer-bottom .footer-menu a :last-child{
+    background-color: red;
+
+}
 @media (min-width: 1400px) {
+
     .container,
     .container-lg,
     .container-md,
@@ -309,5 +383,6 @@ header .header-menu form .form-type-search {
     .container-xl,
     .container-xxl {
         max-width: 1045px;
+        margin: 0 auto;
     }
 }
